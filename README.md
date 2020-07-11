@@ -7,6 +7,7 @@
 **_ Zeyad AlSayed Mohammed _**
 
 ## Libraries
-> [Glide] (https://github.com/bumptech/glide).
-> [Material Design] (https://material.io/).
+> [Glide](https://github.com/bumptech/glide). \n
+
+> [Material Design](https://material.io/).
 
