@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.demo.DemoFragment"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/demo_fragment_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="97">
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_weight="3">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="10dp"
+            android:layout_weight="90"/>
+
+        <Button
+            android:id="@+id/demo_fragment_ll_finish_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

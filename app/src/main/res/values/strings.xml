@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Blood Bank</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="hello_image_view_description">Image Description</string>
+    <string name="splash_screen_text_blood_bank">Blood Bank</string>
+    <string name="register_fragment_ll_tv">Please fill your info</string>
+    <string name="register_fragment_ll_btn">Sign up</string>
+    <string name="login_fragment_forget_passwrod"><u>Forget Password?</u></string>
+    <string name="login_fragment_ll_btn">Sign In</string>
+    <string name="forget_password_ll_send_btn">Send</string>
+</resources>

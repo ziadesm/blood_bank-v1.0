@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">بنك الدم</string>
+    <string name="splash_screen_text_blood_bank">بنك الدم</string>
+    <string name="register_fragment_ll_tv">برجاء إدخال بياناتك</string>
+    <string name="register_fragment_ll_btn">تسجيل</string>
+    <string name="hello_image_view_description">هذه صورة</string>
+    <string name="login_fragment_forget_passwrod">هل نسيت كلمة السر؟</string>
+    <string name="login_fragment_ll_btn">دخول</string>
+</resources>
