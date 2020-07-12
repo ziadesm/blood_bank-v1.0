@@ -30,7 +30,7 @@ public class SplashFragment extends Fragment {
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(getActivity(), DemoActivity.class);
             startActivity(intent);
-        }, 2000);
+        }, 5000);
     }
 
     private void hideBars() {

@@ -4,7 +4,7 @@
 > a beginner of android development.
 
 ## Author
-**_ Zeyad AlSayed Mohammed _**
+_** Zeyad AlSayed Mohammed **_
 
 ## Libraries
 > [Glide](https://github.com/bumptech/glide).

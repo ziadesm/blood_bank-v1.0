@@ -17,14 +17,16 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:background="@drawable/splash_fragment_up_banner"
+            android:adjustViewBounds="true"
+            android:background="@drawable/splash_fragment_banner_up"
             android:contentDescription="@string/hello_image_view_description"
-            android:padding="20dp"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toTopOf="@+id/splash_fragment_cl_image_view_middle"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.718" />
 
         <ImageView
             android:id="@+id/splash_fragment_cl_image_view_middle"
@@ -34,7 +36,6 @@
             android:src="@drawable/blood_donation"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,16 +49,15 @@
             android:textColor="#D51717"
             android:textSize="19sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/splash_fragment_cl_image_view_middle"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/splash_fragment_cl_image_view_middle" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/splash_fragment_down_banner"
+            android:background="@drawable/splash_fragment_banner_down"
             android:contentDescription="@string/hello_image_view_description"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
