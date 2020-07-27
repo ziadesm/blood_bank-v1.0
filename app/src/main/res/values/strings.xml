@@ -9,4 +9,15 @@
     <string name="login_fragment_forget_passwrod"><u>Forget Password?</u></string>
     <string name="login_fragment_ll_btn">Sign In</string>
     <string name="forget_password_ll_send_btn">Send</string>
+    <string name="register_fragment_et_email">Insert your email</string>
+    <string name="register_fragment_ll_et_birth">Birthday</string>
+    <string name="reg_fragment_ll_et_blood_type">Blood type</string>
+    <string name="reg_fragment_ll_et_last_don">Last donation date</string>
+    <string name="reg_fragment_ll_et_city">Your city/country</string>
+    <string name="reg_fragment_ll_et_country">Your country</string>
+    <string name="reg_fragment_ll_et_phone_num">Put your phone number</string>
+    <string name="reg_fragment_ll_et_pass1">Enter password</string>
+    <string name="reg_fragment_ll_et_pass2">Re-enter your password</string>
+    <string name="reg_fragment_ll_et_username">Enter your name</string>
+    <string name="login_fragment_register_words">No account? Create new one.</string>
 </resources>

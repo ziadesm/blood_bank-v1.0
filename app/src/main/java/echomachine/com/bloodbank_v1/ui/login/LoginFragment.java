@@ -13,12 +13,13 @@ import android.widget.TextView;
 
 import echomachine.com.bloodbank_v1.R;
 import echomachine.com.bloodbank_v1.ui.forget_password.ResetPasswordActivity;
-import echomachine.com.bloodbank_v1.utils.HelperMethods;
+import echomachine.com.bloodbank_v1.ui.register.RegisterActivity;
+import echomachine.com.bloodbank_v1.utils.HelperMethod;
 import echomachine.com.bloodbank_v1.utils.NavigationUtils;
 
 public class LoginFragment extends Fragment {
     private EditText ed0, ed1;
-    private TextView tv0;
+    private TextView tv0, tv1;
     private Button signinBtn;
 
 
@@ -29,7 +30,7 @@ public class LoginFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        HelperMethods.hideAllBars(getActivity());
+        HelperMethod.hideAllBars(getActivity());
     }
 
     @Override
@@ -40,6 +41,7 @@ public class LoginFragment extends Fragment {
 
         signinBtn = view.findViewById(R.id.login_fragment_ll_btn);
         tv0 = view.findViewById(R.id.login_fragment_ll_tv);
+        tv1 = view.findViewById(R.id.login_fragment_ll_tv_register);
         ed0 = view.findViewById(R.id.login_fragment_ll_et_0);
         ed1 = view.findViewById(R.id.login_fragment_ll_et_1);
 
@@ -47,6 +49,9 @@ public class LoginFragment extends Fragment {
 
         tv0.setOnClickListener(v -> NavigationUtils
                 .navigateToDestinationActivity(getActivity(), ResetPasswordActivity.class));
+        tv1.setOnClickListener(v -> NavigationUtils
+                .navigateToDestinationActivity(getActivity(), RegisterActivity.class));
+
         return view;
     }
 

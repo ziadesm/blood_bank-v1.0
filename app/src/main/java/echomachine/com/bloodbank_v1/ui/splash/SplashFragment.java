@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 
 import echomachine.com.bloodbank_v1.R;
 import echomachine.com.bloodbank_v1.ui.demo.DemoActivity;
-import echomachine.com.bloodbank_v1.utils.HelperMethods;
+import echomachine.com.bloodbank_v1.utils.HelperMethod;
 
 public class SplashFragment extends Fragment {
 
@@ -26,20 +26,10 @@ public class SplashFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        HelperMethods.hideAllBars(getActivity());
+        HelperMethod.hideAllBars(getActivity());
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(getActivity(), DemoActivity.class);
             startActivity(intent);
-        }, 5000);
-    }
-
-    private void hideBars() {
-        View decorView = getActivity().getWindow().getDecorView();
-        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE
-                | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_FULLSCREEN);
+        }, 2000);
     }
 }

@@ -19,7 +19,7 @@ import echomachine.com.bloodbank_v1.adapter.ViewPagerAdapter;
 import echomachine.com.bloodbank_v1.pojo.DemoModel;
 import echomachine.com.bloodbank_v1.pojo.DemoModelList;
 import echomachine.com.bloodbank_v1.ui.login.LoginActivity;
-import echomachine.com.bloodbank_v1.utils.HelperMethods;
+import echomachine.com.bloodbank_v1.utils.HelperMethod;
 import echomachine.com.bloodbank_v1.utils.NavigationUtils;
 
 public class DemoFragment extends Fragment {
@@ -46,7 +46,7 @@ public class DemoFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        HelperMethods.hideAllBars(getActivity());
+        HelperMethod.hideAllBars(getActivity());
     }
 
     private void init() {

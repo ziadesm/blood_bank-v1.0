@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import echomachine.com.bloodbank_v1.R;
-import echomachine.com.bloodbank_v1.utils.HelperMethods;
+import echomachine.com.bloodbank_v1.utils.HelperMethod;
 
 public class ResetPasswordFragment extends Fragment {
     public ResetPasswordFragment() {
@@ -23,7 +23,7 @@ public class ResetPasswordFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        HelperMethods.hideAllBars(getActivity());
+        HelperMethod.hideAllBars(getActivity());
     }
 
     @Override
